@@ -18,6 +18,7 @@
 - what language is curl? (NOT JS)
 - what language is ajax (JS)
 - what language is the server? (doesn't matter - we are working with the client)
+- curl Debugging steps: https://ga-students.slack.com/files/slammyde/F5C8B3RGR/image_uploaded_from_ios.jpg
 
 #### Curl HEADER
 - response header
