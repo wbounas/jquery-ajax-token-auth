@@ -22,3 +22,10 @@
 #### Curl HEADER
 - response header
 - request header
+
+### API
+- what does the I stand for?
+  - interface: something goes in, something comes out
+- server is a black box. Don't worry about the server in the game project...just read the documentation
+- the documentation provides the _contract_ that explains what will happen when a request comes in, and something comes out
+- read the docs != you are an idiot. It means, the explanation for how it works is there, and that's the authoritative source.
