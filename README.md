@@ -23,7 +23,7 @@ By the end of this talk, developers should be able to:
 
 ## Instructions
 
-1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone) this
+1.  [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone) this
 repository.
 1.  Create a new branch, `training`, for your work.
 1.  Install dependencies with `npm install`.
