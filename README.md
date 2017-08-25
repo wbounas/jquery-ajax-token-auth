@@ -47,6 +47,18 @@ The operations we'll perform:
 | PATCH  | `/change-password/:id` | `passwords` containing `old` and `new` (requires Authorization header) |
 | DELETE | `/sign-out/:id`        | None (requires Authorization header) |
 
+## CURL Gotchas
+
+We'll be using a lot of curl scripts as we send requests to our API, so it's
+important to remember some of the common pitfalls in writing and running curl
+scripts.
+
+1.  Unlike JavaScript objects, trailing commas are **not** valid in a curl
+    script.
+1.  We use constants in our curl scripts, which are in `CAPITAL_LETTERS`.
+    Your curl script will not work correctly if you don't assign values to
+    those constants. (i.e. `TITLE='Ancillary Justice'`)
+
 ### Registering with the API
 
 #### Follow along: Use an Echo Server to Help Write Code
