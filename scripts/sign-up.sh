@@ -1,12 +1,16 @@
 #!/bin/bash
 
-#curl "http://localhost:3000/sign-up" \
-curl "http://httpbin.org/post" \
+# sh scripts/sign-up.sh
+
+API="${API_ORIGIN:-http://httpbin.org}"
+URL_PATH="/post"
+# API="${API_ORIGIN:-https://ga-library-api.herokuapp.com}"
+# URL_PATH="/sign-up"
+
+curl "${API}${URL_PATH}" \
   --include \
   --request POST \
-  --data-urlencode ""
+  --header "Content-Type: application/x-www-form-urlencoded" \
+  --data-urlencode ''
 
-# --header "Content-Type: application/x-www-form-urlencoded"
-
-# data output from curl doesn't have a trailing newline
 echo

@@ -1,11 +1,16 @@
 #!/bin/bash
 
-#curl "http://localhost:3000/sign-up" \
-curl "http://httpbin.org/post" \
+# sh scripts/sign-up-json.sh
+
+API="${API_ORIGIN:-http://httpbin.org}"
+URL_PATH="/post"
+# API="${API_ORIGIN:-https://ga-library-api.herokuapp.com}"
+# URL_PATH="/sign-up"
+
+curl "${API}${URL_PATH}" \
   --include \
   --request POST \
   --header "Content-Type: application/json" \
-  --data ""
+  --data ''
 
-# data output from curl doesn't have a trailing newline
 echo
