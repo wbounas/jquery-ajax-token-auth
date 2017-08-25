@@ -11,7 +11,8 @@ API uses Token authentication and we'll see how to make authenticated request
 
 ## Prerequisites
 
--   jquery-ajax-*
+-   [http-study](https://git.generalassemb.ly/ga-wdi-boston/http-study)
+-   [json-study](https://git.generalassemb.ly/ga-wdi-boston/json-study)
 
 ## Objectives
 
