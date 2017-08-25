@@ -18,8 +18,8 @@ API uses Token authentication and we'll see how to make authenticated request
 
 By the end of this talk, developers should be able to:
 
--   Use `curl` to access an authenticated API.
--   Use `$.ajax` to access an authenticated API.
+- Make HTTP requests using `curl`, the browser address bar, and AJAX to:
+  -   access an authenticated API.
 
 ## Instructions
 
