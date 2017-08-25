@@ -80,7 +80,7 @@ the benefit of using an echo server?
 
 Next we'll want to actually register with the API.
 
-We'll modify `scripts/sign-up[-json].sh` to connect to the `library-api`.
+We'll modify `scripts/sign-up[-json].sh` to connect to the `ga-library-api`.
 
 #### Code along: Sign-up from our client
 
