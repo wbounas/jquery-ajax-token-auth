@@ -59,6 +59,7 @@ scripts.
 1.  We use constants in our curl scripts, which are in `CAPITAL_LETTERS`.
     Your curl script will not work correctly if you don't assign values to
     those constants. (i.e. `TITLE='Ancillary Justice'`)
+1.  Data output from curl doesn't have a trailing newline.
 
 ### Registering with the API
 
