@@ -36,8 +36,8 @@ Web APIs often require some sort of authentication.  The game API requires users
 to register and then login to gain an authentication token.
 
 We'll use `curl`, [httpbin.org](http://httpbin.org/), and `jQuery.ajax` to
-explore HTTP further. Then we'll connect to an authenticated API,
-[library-api](https://github.com/ga-wdi-boston/library-api).
+explore HTTP further. Then we'll make requests to and receive responses from a
+HTTP server hosted at https://ga-library-api.herokuapp.com.
 
 The operations we'll perform:
 
