@@ -1,10 +1,10 @@
 'use strict'
 
-const signUpSuccess = (data) => {
+const signUpSuccess = function (data) {
   console.log(data)
 }
 
-const signUpFailure = (error) => {
+const signUpFailure = function (error) {
   console.error(error)
 }
 

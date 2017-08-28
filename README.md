@@ -11,18 +11,19 @@ API uses Token authentication and we'll see how to make authenticated request
 
 ## Prerequisites
 
--   jquery-ajax-*
+-   [http-study](https://git.generalassemb.ly/ga-wdi-boston/http-study)
+-   [json-study](https://git.generalassemb.ly/ga-wdi-boston/json-study)
 
 ## Objectives
 
 By the end of this talk, developers should be able to:
 
--   Use `curl` to access an authenticated API.
--   Use `$.ajax` to access an authenticated API.
+- Make HTTP requests using `curl`, the browser address bar, and AJAX to:
+  -   access an authenticated API.
 
 ## Instructions
 
-1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone) this
+1.  [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone) this
 repository.
 1.  Create a new branch, `training`, for your work.
 1.  Install dependencies with `npm install`.
@@ -35,8 +36,8 @@ Web APIs often require some sort of authentication.  The game API requires users
 to register and then login to gain an authentication token.
 
 We'll use `curl`, [httpbin.org](http://httpbin.org/), and `jQuery.ajax` to
-explore HTTP further. Then we'll connect to an authenticated API,
-[library-api](https://github.com/ga-wdi-boston/library-api).
+explore HTTP further. Then we'll make requests to and receive responses from a
+HTTP server hosted at https://ga-library-api.herokuapp.com.
 
 The operations we'll perform:
 
@@ -46,6 +47,19 @@ The operations we'll perform:
 | POST   | `/sign-in`             | `credentials` containing `email` and `password` (response contains auth data) |
 | PATCH  | `/change-password/:id` | `passwords` containing `old` and `new` (requires Authorization header) |
 | DELETE | `/sign-out/:id`        | None (requires Authorization header) |
+
+## CURL Gotchas
+
+We'll be using a lot of curl scripts as we send requests to our API, so it's
+important to remember some of the common pitfalls in writing and running curl
+scripts.
+
+1.  Unlike JavaScript objects, trailing commas are **not** valid in a curl
+    script.
+1.  We use constants in our curl scripts, which are in `CAPITAL_LETTERS`.
+    Your curl script will not work correctly if you don't assign values to
+    those constants. (i.e. `TITLE='Ancillary Justice'`)
+1.  Data output from curl doesn't have a trailing newline.
 
 ### Registering with the API
 
@@ -67,7 +81,7 @@ the benefit of using an echo server?
 
 Next we'll want to actually register with the API.
 
-We'll modify `scripts/sign-up[-json].sh` to connect to the `library-api`.
+We'll modify `scripts/sign-up[-json].sh` to connect to the `ga-library-api`.
 
 #### Code along: Sign-up from our client
 

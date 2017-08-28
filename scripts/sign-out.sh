@@ -1,9 +1,14 @@
 #!/bin/bash
 
-# curl "http://localhost:3000/sign-out/$ID" \
-curl "http://httpbin.org/delete?id=$ID" \
-  --include \
-  --request DELETE
+# ID=2 sh scripts/sign-out.sh
 
-# data output from curl doesn't have a trailing newline
+API="${API_ORIGIN:-http://httpbin.org}"
+URL_PATH="/delete?id=$ID"
+# API="${API_ORIGIN:-https://ga-library-api.herokuapp.com}"
+# URL_PATH="/sign-out/$ID"
+
+curl "${API}${URL_PATH}" \
+  --include \
+  --request DELETE \
+
 echo

@@ -13,7 +13,7 @@ const onSignUp = function (event) {
     .catch(ui.signUpFailure)
 }
 
-const addHandlers = () => {
+const addHandlers = function () {
   $('#sign-up').on('submit', onSignUp)
 }
 
