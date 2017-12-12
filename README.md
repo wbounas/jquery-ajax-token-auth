@@ -54,12 +54,16 @@ We'll be using a lot of curl scripts as we send requests to our API, so it's
 important to remember some of the common pitfalls in writing and running curl
 scripts.
 
-1. Unlike JavaScript objects, trailing commas are **not** valid in a curl
-    script.
-1. We use constants in our curl scripts, which are in `CAPITAL_LETTERS`.
-    Your curl script will not work correctly if you don't assign values to
-    those constants. (i.e. `TITLE='Ancillary Justice'`)
-1. Data output from curl doesn't have a trailing newline.
+1. The following **are not** valid in a curl request:
+    - Trailing commas in the json body.
+    - Comments after the `curl` keyword.
+    - Missing back slashes after each option.
+
+1. We use constants in our curl requests, which are in `CAPITAL_LETTERS`.
+    Your curl request will not work correctly if you don't assign values to
+    those constants. (i.e. `TITLE='Ancillary Justice'`).
+    - Spaces between values assigned to variables in the terminal **are not**
+      valid and **will not** run your curl script.
 
 ### Registering with the API
 
