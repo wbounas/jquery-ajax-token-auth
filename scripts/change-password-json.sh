@@ -5,7 +5,7 @@
 API="${API_ORIGIN:-http://httpbin.org}"
 URL_PATH="/patch?id=${ID}"
 # API="${API_ORIGIN:-https://ga-library-api.herokuapp.com}"
-# URL_PATH="change-password/${ID}"
+# URL_PATH="/change-password/${ID}"
 
 curl "${API}${URL_PATH}" \
   --include \
