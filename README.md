@@ -11,22 +11,22 @@ API uses Token authentication and we'll see how to make authenticated request
 
 ## Prerequisites
 
--   [http-study](https://git.generalassemb.ly/ga-wdi-boston/http-study)
--   [json-study](https://git.generalassemb.ly/ga-wdi-boston/json-study)
+- [http-study](https://git.generalassemb.ly/ga-wdi-boston/http-study)
+- [json-study](https://git.generalassemb.ly/ga-wdi-boston/json-study)
 
 ## Objectives
 
 By the end of this talk, developers should be able to:
 
 - Make HTTP requests using `curl`, the browser address bar, and AJAX to:
-  -   access an authenticated API.
+  - access an authenticated API.
 
 ## Instructions
 
-1.  [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone) this
-repository.
-1.  Create a new branch, `training`, for your work.
-1.  Install dependencies with `npm install`.
+1. [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
+this repository.
+1. Create a new branch, `training`, for your work.
+1. Install dependencies with `npm install`.
 
 ## Using web APIs
 
@@ -54,12 +54,12 @@ We'll be using a lot of curl scripts as we send requests to our API, so it's
 important to remember some of the common pitfalls in writing and running curl
 scripts.
 
-1.  Unlike JavaScript objects, trailing commas are **not** valid in a curl
+1. Unlike JavaScript objects, trailing commas are **not** valid in a curl
     script.
-1.  We use constants in our curl scripts, which are in `CAPITAL_LETTERS`.
+1. We use constants in our curl scripts, which are in `CAPITAL_LETTERS`.
     Your curl script will not work correctly if you don't assign values to
     those constants. (i.e. `TITLE='Ancillary Justice'`)
-1.  Data output from curl doesn't have a trailing newline.
+1. Data output from curl doesn't have a trailing newline.
 
 ### Registering with the API
 
@@ -132,16 +132,16 @@ out of the API.
 
 Developers should run these often!
 
--   `grunt nag` or just `grunt`: runs code quality analysis tools on your code
+- `grunt nag` or just `grunt`: runs code quality analysis tools on your code
     and complains
--   `grunt reformat`: reformats all your code in a standard style
--   `grunt <server|serve|s>`: generates bundles, watches, and livereloads
--   `grunt test`: runs any automated tests, depends on `grunt build`
--   `grunt build`: place bundled styles and scripts where `index.html` can find
+- `grunt reformat`: reformats all your code in a standard style
+- `grunt <server|serve|s>`: generates bundles, watches, and livereloads
+- `grunt test`: runs any automated tests, depends on `grunt build`
+- `grunt build`: place bundled styles and scripts where `index.html` can find
     them
 
 ## [License](LICENSE)
 
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
+1. All content is licensed under a CC­BY­NC­SA 4.0 license.
+1. All software code is licensed under GNU GPLv3. For commercial use or
     alternative licensing, please contact legal@ga.co.
