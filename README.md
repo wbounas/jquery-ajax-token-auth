@@ -144,6 +144,10 @@ Developers should run these often!
 - `grunt build`: place bundled styles and scripts where `index.html` can find
     them
 
+## Additional Resources
+
+- [httpbin.org](http://httpbin.org/post)
+
 ## [License](LICENSE)
 
 1. All content is licensed under a CC­BY­NC­SA 4.0 license.
