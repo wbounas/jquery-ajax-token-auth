@@ -67,20 +67,6 @@ scripts.
 
 ### Registering with the API
 
-#### Follow along: Use an Echo Server to Help Write Code
-
-First we'll test our command against an [echo server](http://httpbin.org/post)
-to make sure we're sending the right data. There's no need to use an actual
-e-mail address and don't use anything you might want to actually use as a
-password.
-
-We'll use `scripts/sign-up[-json].sh` to run curl, first sending JSON then
-sending data the way the browser does by default. We'll see how the server
-treats both ways of sending data (it's all just strings) in a similar way.
-
-If we left out the `--include` flag we wouldn't see the response header. What's
-the benefit of using an echo server?
-
 #### Code along: Write a sign-up script
 
 Next we'll want to actually register with the API.
