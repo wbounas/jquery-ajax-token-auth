@@ -35,9 +35,9 @@ Why is authentication an important topic?
 Web APIs often require some sort of authentication.  The game API requires users
 to register and then login to gain an authentication token.
 
-We'll use `curl`, [httpbin.org](http://httpbin.org/), and `jQuery.ajax` to
-explore HTTP further. Then we'll make requests to and receive responses from a
-HTTP server hosted at https://ga-library-api.herokuapp.com.
+We'll use `curl` and `jQuery.ajax` to explore HTTP further. Then we'll make
+requests to and receive responses from a HTTP server hosted at
+https://ga-library-api.herokuapp.com.
 
 The operations we'll perform:
 
@@ -69,14 +69,14 @@ scripts.
 
 #### Code along: Write a sign-up script
 
-Next we'll want to actually register with the API.
+Let's register with the API.
 
 We'll modify `scripts/sign-up[-json].sh` to connect to the `ga-library-api`.
 
 #### Code along: Sign-up from our client
 
 Now let's put code into `assests/scripts/auth/*` to get another "e-mail" address
-registered with the API.  We'll again start with the echo server.
+registered with the API.
 
 ### Logging into the API
 
@@ -88,7 +88,7 @@ we just created.
 #### Lab: Sign-in from the client
 
 Add a form to `index.html` and code to `assets/scripts/auth/*` to login to the
-API. You may want to start by using the echo service to check your request.
+API.
 
 What should we do with the data returned by the API?
 
