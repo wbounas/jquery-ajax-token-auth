@@ -1,13 +1,8 @@
 #!/bin/bash
 
-# sh scripts/sign-in.sh
+# sh scripts/url-encoded/sign-in.sh
 
-API="${API_ORIGIN:-http://httpbin.org}"
-URL_PATH="/post"
-# API="${API_ORIGIN:-https://ga-library-api.herokuapp.com}"
-# URL_PATH="/sign-in"
-
-curl "${API}${URL_PATH}" \
+curl "https://ga-library-api.herokuapp.com/sign-in" \
   --include \
   --request POST \
   --header "Content-Type: application/x-www-form-urlencoded" \
