@@ -71,7 +71,15 @@ scripts.
 
 Let's register with the API.
 
-We'll modify `scripts/sign-up[-json].sh` to connect to the `ga-library-api`.
+We'll first modify `scripts/url-encoded/sign-up.sh` to send a request with
+_urlencoded_ data to the `ga-library-api`.
+
+- What response do we receive from the API?
+
+Now we'll modify `scripts/json/sign-up.sh` to send a request with _json_ data to
+the `ga-library-api`.
+
+How is the API response different from sending urlencoded vs json data?
 
 #### Code along: Sign-up from our client
 
@@ -82,7 +90,7 @@ registered with the API.
 
 #### Code along: Write a sign-in script
 
-Now with url encoded data in `scripts/sign-in.sh`, let's sign in to the account
+Now with json data in `scripts/json/sign-in.sh`, let's sign in to the account
 we just created.
 
 #### Lab: Sign-in from the client
@@ -96,7 +104,7 @@ What should we do with the data returned by the API?
 
 #### Code along: Write/Execute a change-password scripts
 
-We'll use `scripts/change-password[-json].sh` to change a password. After that
+We'll use `scripts/json/change-password.sh` to change a password. After that
 we'll verify that we can no longer authenticate using the old password.
 
 #### Lab: Change password from the client
