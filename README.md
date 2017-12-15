@@ -65,9 +65,9 @@ scripts.
     - Spaces between values assigned to variables in the terminal **are not**
       valid and **will not** run your curl script.
 
-### Registering with the API
+## Registering with the API
 
-#### Code along: Write a sign-up script
+### Code along: Write a sign-up script
 
 Let's register with the API.
 
@@ -81,47 +81,47 @@ the `ga-library-api`.
 
 How is the API response different from sending urlencoded vs json data?
 
-#### Code along: Sign-up from our client
+### Code along: Sign-up from our client
 
 Now let's put code into `assests/scripts/auth/*` to get another "e-mail" address
 registered with the API.
 
-### Logging into the API
+## Logging into the API
 
-#### Code along: Write a sign-in script
+### Code along: Write a sign-in script
 
 Now with json data in `scripts/json/sign-in.sh`, let's sign in to the account
 we just created.
 
-#### Lab: Sign-in from the client
+### Lab: Sign-in from the client
 
 Add a form to `index.html` and code to `assets/scripts/auth/*` to login to the
 API.
 
 What should we do with the data returned by the API?
 
-### Changing the password
+## Changing the password
 
-#### Code along: Write/Execute a change-password scripts
+### Code along: Write/Execute a change-password scripts
 
 We'll use `scripts/json/change-password.sh` to change a password. After that
 we'll verify that we can no longer authenticate using the old password.
 
-#### Lab: Change password from the client
+### Lab: Change password from the client
 
 Add a change password form to `index.html` and code to `assets/scripts/auth/*`
 to change the password.
 
-### Signing out
+## Signing out
 
 Signing out invalidates the the current token.
 
-#### Code along: Write/Execute a sign-out script
+### Code along: Write/Execute a sign-out script
 
 We'll use `scripts/sign-out.sh` to sign out of the API. We'll verify that the
 token we used is no longer valid.
 
-#### Lab: Sign out from the client
+### Lab: Sign out from the client
 
 Add a sign out form to `index.html` and code to `assets/scripts/auth/*` to sign
 out of the API.
