@@ -126,6 +126,33 @@ token we used is no longer valid.
 Add a sign out form to `index.html` and code to `assets/scripts/auth/*` to sign
 out of the API.
 
+## Authenticated Resources
+
+Now that we can sign up and sign in to our API, let's add and modify our own
+resources.
+
+### Code along: Create an Example
+
+First, we'll modify `scripts/examples/create.sh` to make an authenticated
+request to our API to create an example.
+
+Now, let's add code to `assests/scripts/examples/*` to create an example from
+the browser.
+
+### Lab: Destroy an Example
+
+Modify `scripts/examples/destroy.sh` to make an authenticated request to our
+API to destroy an example.
+
+Add code to `assests/scripts/examples/*` to destroy an example from the browser.
+
+### Lab: Update an Example
+
+Modify `scripts/examples/update.sh` to make an authenticated request to our
+API to update an example.
+
+Add code to `assests/scripts/examples/*` to update an example from the browser.
+
 ## Tasks
 
 Developers should run these often!
