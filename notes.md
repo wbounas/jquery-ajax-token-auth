@@ -35,9 +35,13 @@
 - Token is a string that you get back after authenticating
 - Send it with each authenticated request. It's a string. You pass it in the header of the request.
 - APIs are stateless. Servers are stateless. HTTP is a stateless protocol.
- - it knows nothing about you. 
+ - it knows nothing about you.
 - Even though you are storing something locally in a cookie, it doesn't mean it knows who you are.
   - You need to send the token with each request so the server knows who you are
   - we are going to store it in memory. meaning if you refresh the app, it goes away!
     - how does facebook store the token? In memory?
 
+
+### Diagrams
+![JS file chain](https://git.generalassemb.ly/storage/user/3667/files/c23457da-c235-11e7-8b44-237f2d6e3524
+)
