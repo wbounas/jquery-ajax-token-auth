@@ -2,6 +2,7 @@
 
 const store = require('../store')
 
+
 const signUpSuccess = function (data) {
   console.log(data)
 }
