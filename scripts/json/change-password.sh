@@ -6,6 +6,12 @@ curl "https://ga-library-api.herokuapp.com/change-password/${ID}" \
   --include \
   --request PATCH \
   --header "Content-Type: application/json" \
-  --data ''
+  --header "Authorization: Token token=${TOKEN}" \
+  --data '{
+    "passwords": {
+      "old": "'"${OLD}"'",
+      "new": "'"${NEW}"'"
+    }
+  }'
 
 echo

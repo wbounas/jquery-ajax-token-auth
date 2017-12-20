@@ -12,15 +12,105 @@
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
+
     <body class="container-fluid">
       <h1>API Token Auth</h1>
+      <p>Accessing an authenticated API.</p>
+
       <form id="sign-up">
         <fieldset>
-          <legend>Sign up!</legend>
-          <input type="submit" name="submit" value="Sign up!">
+          <legend>Sign Up!</legend>
+          <input type="text" name="credentials[email]" placeholder="Enter Email">
+          <input type="password" name="credentials[password]" placeholder="Enter Password">
+          <input type="password" name="credentials[password_confirmation]" placeholder="Enter Password Again">
+          <input type="submit" name="submit" value="Sign Up!">
         </fieldset>
       </form>
+      <p id="sign-up-message"></p>
 
-      <p>Accessing an authenticated API.</p>
+      <br>
+      <br>
+      <br>
+
+      <form id="sign-in">
+        <fieldset>
+          <legend>Sign In!</legend>
+          <input type="text" name="credentials[email]" placeholder="Enter Email Here">
+          <input type="password" name="credentials[password]" placeholder="Enter Password Here">
+          <input type="submit" name="submit" value="Sign In!">
+        </fieldset>
+      </form>
+      <p id="sign-in-message"></p>
+
+      <br>
+      <br>
+      <br>
+
+      <form id="change-password">
+        <fieldset>
+          <legend>Change your Password!</legend>
+          <input type="password" name="passwords[old]" placeholder="Old Password Here">
+          <input type="password" name="passwords[new]" placeholder="New Password Here">
+          <input type="submit" name="submit" value="Change Password!">
+        </fieldset>
+      </form>
+      <p id="change-password-message"></p>
+
+      <br>
+      <br>
+      <br>
+
+      <form id="sign-out-user">
+        <fieldset>
+          <legend>Sign-Out User!</legend>
+          <input type="submit" name="submit" value="Sign Out!">
+        </fieldset>
+      </form>
+      <p id="sign-out-user-message"></p>
+
+      <br>
+      <br>
+      <br>
+
+      <form id="create-example">
+        <fieldset>
+          <legend>Create your very own example!</legend>
+          <input type="text" name="example[text]" placeholder="Example Here PLEASE">
+          <input type="submit" name="submit" value="Create Example!">
+        </fieldset>
+      </form>
+      <p id="create-example-message"></p>
+
+      <br>
+      <br>
+      <br>
+
+      <form id="update-example">
+        <fieldset>
+          <legend>Update your very own example!</legend>
+          <input type="text" name="example[id]" placeholder="ID to be changed here.">
+          <input type="text" name="example[text]" placeholder="Change What???">
+          <input type="submit" name="submit" value="Update Example!">
+        </fieldset>
+      </form>
+      <p id="update-example-message"></p>
+
+      <br>
+      <br>
+      <br>
+
+      <form id="destroy-example">
+        <fieldset>
+          <legend>Delete an example of your choosing!</legend>
+          <input type="text" name="example[id]" placeholder="ID to be deleted here.">
+          <input type="submit" name="submit" value="Destroy Example!">
+        </fieldset>
+      </form>
+      <p id="destroy-example-message"></p>
+
+      <br>
+      <br>
+      <br>
+
     </body>
 </html>
