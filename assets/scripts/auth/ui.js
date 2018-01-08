@@ -2,7 +2,6 @@
 
 const store = require('../store')
 
-
 const signUpSuccess = function (data) {
   console.log(data)
 }
@@ -15,7 +14,7 @@ const signInSuccess = function (data) {
   console.log('Signed In! Data:', data)
   $('#sign-in-message').html('You are signed in!')
   $('#sign-in-message').css('color', 'green')
-  store.user = data.user // save it to store.js
+  store.user = data.user // save it to store object is store.js
   console.log('Stored User:', store)
 }
 
